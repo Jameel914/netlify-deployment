@@ -5,10 +5,11 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  console.log(`${import.meta.env.VITE_JAMEEL_VAR}`);
   return (
     <>
       <div>Jameel Ibrahim</div>
+      <div>secret code is {import.meta.env.VITE_JAMEEL_VAR}</div>
     </>
   )
 }
